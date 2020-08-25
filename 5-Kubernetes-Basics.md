@@ -91,7 +91,7 @@ spec:
 This describes a `Pod` that we can deploy. To create a new file in Google Cloud Platform select the 'Open Editor' button in the top-right, above the cloud shell. Once you have switched views, select 'File' > 'New File'. You will be prompted to name your file, we'd recommend 'pod.yaml', but be creative! Once you have copied the contents from the `kubes/pod.yaml` over, we can deploy the pod using the file, with this command:
 
 ```
-kubectl apply -f kubes/pod.yaml
+kubectl apply -f pod.yaml
 ```
 
 You can see the pod being created if you list them, using the same command we used previously:
@@ -120,7 +120,7 @@ spec:
 This change changes the image in use from `nginx:alpine` to `nginx:latest`. We can apply it on top of our previous pod like so:
 
 ```
-kubectl apply -f kubes/pod-changed.yaml
+kubectl apply -f pod-changed.yaml
 ```
 
 Now, what do we see when we execute the following command?
