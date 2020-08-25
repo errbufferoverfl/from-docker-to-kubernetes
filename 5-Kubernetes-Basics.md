@@ -88,7 +88,7 @@ spec:
       name: nginx
 ```
 
-This describes a `Pod` that we can deploy. We can deploy the pod using the file, with this command:
+This describes a `Pod` that we can deploy. To create a new file in Google Cloud Platform select the 'Open Editor' button in the top-right, above the cloud shell. Once you have switched views, select 'File' > 'New File'. You will be prompted to name your file, we'd recommend 'pod.yaml', but be creative! Once you have copied the contents from the `kubes/pod.yaml` over, we can deploy the pod using the file, with this command:
 
 ```
 kubectl apply -f kubes/pod.yaml
